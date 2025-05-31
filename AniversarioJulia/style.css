@@ -83,7 +83,7 @@ section.imagem#img{
     text-align: center;
 }
 .colagem>img{
-    max-width: 4%;
+    max-width: 400px;
     margin: auto;
 }
 footer{
