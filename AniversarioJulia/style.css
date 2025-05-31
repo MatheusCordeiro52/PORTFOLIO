@@ -74,7 +74,18 @@ section.imagem#img003{
     background-size: cover;
     background-attachment: fixed;
 }
-
+section.imagem#img{
+    background-color: rgba(128, 0, 128, 0.452);
+}
+.colagem{
+    background-color: purple;
+    padding: 10px;
+    text-align: center;
+}
+.colagem>img{
+    max-width: 500px;
+    margin: auto;
+}
 footer{
     background-color: var(--cor1);
     color: white;
