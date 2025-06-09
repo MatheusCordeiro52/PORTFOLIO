@@ -1,0 +1,91 @@
+@charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    background-image: url(imagens/Background_Header.jpg);
+    padding: 50px;
+    text-align: center;
+}
+header>h1{
+    font-size: 3em;
+    font-family: "Great Vibes", cursive;
+}
+header>h2{
+    font-size: 1em;
+}
+
+main{
+    padding-top: 10px;
+    background-color: black;
+    max-width: 390px;
+    text-align: center;
+    margin: auto;
+}
+section.text{
+    margin: 20px;
+    margin-top: 0px;
+    background-color: blanchedalmond;
+    background: url(imagens/BackgroundClassText.jpg);
+    background-size: cover;
+    color: black;
+    border-radius: 10px;
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 10px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    line-height: 1.5;
+    text-indent: 30px;
+    font-weight: 500;
+}
+section.fotoInstagram{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+div.perfil>img{
+    border-radius: 50%;
+    width: 33px;
+    float: left;
+    margin-left: 10px;
+}
+div.perfil>p{
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+img.PrimeiraPostagem{
+    width: 390px;
+    margin-top: 10px;
+}
+#Curtida>img{
+    float: left;
+    margin-left: 10px;
+}
+#Curtida>p{
+    float: left;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+#Comentario>img{
+    float: left;
+    margin-left: 10px;
+}
+#Comentario>p{
+    float: left;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+#Compartilhar>img{
+    float: left;
+    margin-left: 10px;
+}
