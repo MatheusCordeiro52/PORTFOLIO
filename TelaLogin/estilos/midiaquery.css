@@ -1,9 +1,6 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px){
-body{
-    background-image: linear-gradient(to bottom, #599afa, #fd79b0);
-}
 section#login{
     width: 80vw;
 }
@@ -17,31 +14,54 @@ section#login > div#formulario{
     width: 70%;
     height: 100%;
 }
-div#formulario > p{
-    font-size: 1.5em;
+section#login h1{
+    font-size: 2em;
 }
 div.campo{
-    
-
+    height: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
+}
+section#login span{
+    font-size: 32px;
+}
+input[type="email"]{
+    height: 40px;
+    width: calc(100% - 50px);
+    transform: translate(0, -10px);
+}
+input[type="password"]{
+    height: 40px;
+    width: calc(100% - 50px);
+    transform: translate(0, -10px);
+}
+section#login .botao{
+    height: 50px;
+}
+form > a.esqueci{
+    margin-top: 10px;
 }
 }
 
 @media screen and (min-width:992px){
-section#login{
-    width: 990px;
+    section#login{
+        width: 70vw;
+    }
+    section#login div#imagem{
+        float: right;
+        width: 50%;
+    }
+    section#login div#formulario{
+        float: left;
+        width: 50%;
+    }
+    section#login h1{
+        font-size: 3em;
+    }
+    input[type="email"]{
+    transform: translate(0, -9px);
 }
-    section#login > div#imagem{
-    float: right;
-    width: 50%;
-    height: 100%;
-}
-section#login > div#formulario{
-    float: left;
-    width: 50%;
-    height: 100%;
-}
-div#formulario > h1{
-    font-size: 3em;
+input[type="password"]{
+    transform: translate(0, -9px);
 }
 }

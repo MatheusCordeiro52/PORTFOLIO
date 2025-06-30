@@ -6,44 +6,34 @@
     <title> Tela Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/midiaquery.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <h1>MathCorp.</h1>
-        <h2>Agência de sites</h2>
-    </header>
     <main>
         <section id="login">
-            <div id="imagem"> 
-                
+            <div id="imagem">
+                <img src="" alt="">
             </div>
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem vindo! Realize o login para poder acessar e entrar em contato conosco!</p>
-                <form action="login.php" method="post" autocomplete="on">
+        <div id="formulario">
+            <h1>Login</h1>
+            <p>
+                Seja bem vindo novamente! Realize seu login para acessar seus negocios e realizar as operações dentro do site!
+            </p>
+            <form action="login.php" method="post" autocomplete="on">
                 <div class="campo">
-                    <p>
-                        <span class="material-symbols-outlined">account_circle</span>
-                        <input type="email" name="email" id="iemail" placeholder="Digite seu email" autocomplete="email" maxlength="30">
-                        <label for="iemail">Email</label> <br>
-                    </p>
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Digite seu email" maxlength="40">
+                    <label for="iemail">Email</label>
                 </div>
                 <div class="campo">
-                    <p>
-                        <span class="material-symbols-outlined">lock</span>
-                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
-                        <label for="isenha">Senha</label> <br>
-                    </p>
+                    <span class="material-symbols-outlined">lock</span>
+                    <input type="password" name="senha" id="isenha" autocomplete="current-password" minlength="8" maxlength="20" placeholder="Digite sua senha">
+                    <label for="isenha">Senha</label>
                 </div>
-                    <p>
-                        <input type="submit" value="Entrar">
-                        <a href="esqueci.html" class="botao">Esqueci a senha</a>
-                    </p>
-                    </form>
-                </div>
-            </section>
+                <input class="botao" type="submit" value="Entrar">
+                <a href="Esqueci.html" class="esqueci">Esqueci minha senha</a>
+            </form>
+        </div>
     </main>
 </body>
 </html>
