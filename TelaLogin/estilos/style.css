@@ -22,7 +22,7 @@ section#login{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
+    overflow: hidden; 
     transition: 0.5s;
 
     background-color: white;
@@ -53,30 +53,25 @@ div.campo{
     margin-top: 5px;
     margin-bottom: 5px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.568);
+    
 }
 section#login span{
     color: white;
-    padding-top: 8px;
-    padding-left: 8px;
+    width: 35px;
+    padding: 8px;
 }
-input[type="email"]{
+div.campo > input{
     background-color: rgb(99, 182, 250);
-    height: 30px;
+    font-size: 1em;
     border-radius: 8px;
     border-style: none;
-    width: calc(100% - 40px);
-    transform: translate(0, -7px);
-    padding-left: 10px;
+    width: calc(100% - 43px);
+    height: 85%;
+    transform: translateY(-6px);
+    padding: 10px;
+
 }
-input[type="password"]{
-    background-color: rgb(99, 182, 250);
-    height: 30px;
-    border-radius: 8px;
-    border-style: none;
-    width: calc(100% - 40px);
-    transform: translate(0, -7px);
-    padding-left: 10px;
-}
+
 input:focus-within{
     background-color: aliceblue;
 }
@@ -88,6 +83,8 @@ section#login .botao{
     border-radius: 10px;
     font-size: 1.3em;
     border-style: none;
+    margin-top: 5px;
+
 }
 section#login .botao:hover{
     background-color: rgb(155, 62, 241);
@@ -99,5 +96,5 @@ form > a.esqueci{
     text-align: center;
     text-decoration: none;
     font-size: 0.8em;
-    
+    margin-top: 5px;
 }
