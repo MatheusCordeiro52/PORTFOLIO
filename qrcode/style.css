@@ -14,13 +14,13 @@ main{
     position: relative;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 section#qr{
     background-color: white;
-    position: absolute;
-    left: 50%;
-    top:50%; 
-    transform: translate(-50%, -50%);
     border-radius: 20px;    
     padding: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.295);
