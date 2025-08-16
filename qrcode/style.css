@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*Mobile First*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  #a4cde7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+section#qr{
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top:50%; 
+    transform: translate(-50%, -50%);
+    border-radius: 20px;    
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.295);
+
+}
+.texto{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.texto h1{
+    font-size:1.1em;
+    margin-bottom: 20px;
+    line-height: 25px;
+    
+}
+.texto p{
+    font-size: .8em;
+    margin-bottom: 20px;
+}
