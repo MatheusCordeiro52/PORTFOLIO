@@ -120,3 +120,14 @@ article h2{
   height: 100%;
   border-radius: 10px;
 }
+article#skills>ul{
+  list-style: none;
+  font-size: 1.2em;
+  color: var(--destaque);
+  font-weight: bold;
+
+}
+#porcentagem{
+ width: 80%;
+ height: 10px;
+}
