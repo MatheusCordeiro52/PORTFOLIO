@@ -16,9 +16,10 @@
   --fundo-card: #ffffff;
   
   /*Variáveis para o tema escuro*/
-  --destaque-escuro: #ff3c00;
+  --fundo-principal-escuro: #d591fc;
+  --destaque-escuro: #a200ff;
   --destaque-inverso-escuro: #fd7f2b;
-  --fundo-card-escuro: #363636;
+  --fundo-card-escuro: #222222;
   --texto-inverso: #ffffff;
 }
 html{
@@ -173,6 +174,7 @@ div.info{
 }
 .card-formacao:hover{
   transform: translateX(8px);
+  width: calc(100% - 8px);
 }
 .card-projetos{
   color: var(--destaque);
@@ -192,10 +194,6 @@ summary{
   color: var(--destaque);
   margin-bottom: 10px;
 }
-
-
-
-
 footer{
   background-color: var(--destaque);
   color: white;
@@ -209,13 +207,9 @@ footer a{
   text-decoration: none;
 }
 
-
-
-
-
                                           /* Tema escuro */
 body.escuro{
-  background-color: grey;
+  background-color: var(--fundo-principal-escuro);
   color: var(--texto-inverso);
 }
 body.escuro header{
@@ -253,7 +247,7 @@ body.escuro article h2 {
   color: var(--destaque-escuro);
 }
 body.escuro div{
-  color: var(--destaque-escuro);
+  color: var(--texto-inverso);
   
 }
 body.escuro .skill-barra-container{
@@ -263,6 +257,19 @@ body.escuro .skill-bar{
   background-color:var(--destaque-escuro);
 }
 body.escuro footer{
+  background-color: var(--destaque-escuro); 
+}
+body.escuro .container-formacao{
   background-color: var(--destaque-escuro);
-  
+}
+body.escuro .card-formacao{
+  color: var(--texto-inverso);
+  background-color: var(--fundo-card-escuro);
+  border: 1px solid var(--destaque-escuro);
+}
+body.escuro .card-projetos{
+  border: 1px solid var(--destaque-escuro);
+}
+body.escuro summary{
+  color: var(--destaque-escuro);
 }
