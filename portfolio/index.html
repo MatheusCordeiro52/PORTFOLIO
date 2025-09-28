@@ -10,14 +10,13 @@
 </head>
 <body>
     <header>
-
         <nav id="menu">
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-user-graduate"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="#ficha"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#skills"><i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#formacao"><i class="fa-solid fa-user-graduate"></i></a></li>
+                <li><a href="#projetos"><i class="fa-solid fa-trowel-bricks"></i></a></li>
+                <li><a href="#" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -44,30 +43,150 @@
 
                 <article id="skills">
                     <h2> <i class="fa-solid fa-brain"></i>Habilidades</h2>
-                        <ul>
-                            <li>HTML<br>90%</li>
-                            <input type="range" id="porcentagem" max="10" value="9" <br>
-                            <li>CSS</li>
-                            <li>JAVASCRIPT</li>
-                            <li>COMUNICAÇÃO</li>
-                            <li>TRABALHO EM EQUIPE</li>
-                            <li>SOLUÇÕES DE PROBLEMAS</li>
-                        </ul>
-                    
-
-                    
-
+                        <div class="container">
+                            <div class="info"> <!--Usado para deixar as informções de html e porcentagem com space-between-->
+                                <h3>HTML</h3>
+                                <h3>90%</h3>
+                            </div>
+                                <div class="skill-barra-container"> <!--usado para criar a barra e deixar com o cinza claro -->
+                                    <div class="skill-bar" style="width: 90%;"></div><!--usado para colocar a parte azul de porcentagem-->
+                            </div>
+                            <div class="info">
+                                <h3>CSS</h3>
+                                <h3>80%</h3>
+                            </div>
+                                <div class="skill-barra-container">
+                                    <div class="skill-bar" style="width: 80%;"></div>
+                                </div>
+                            <div class="info">
+                                <h3>JavaScript</h3>
+                                <h3>30%</h3>
+                            </div>
+                                <div class="skill-barra-container">
+                                    <div class="skill-bar" style="width: 30%;"></div>
+                                </div>
+                            <div class="info">
+                                <h3>COMUNICAÇÃO</h3>
+                                <h3>90%</h3>
+                            </div>
+                                <div class="skill-barra-container">
+                                    <div class="skill-bar" style="width: 90%;"></div>
+                                </div>
+                            <div class="info">
+                                <h3>CRIATIVIDADE</h3>
+                                <h3>95%</h3>
+                            </div>
+                                <div class="skill-barra-container">
+                                    <div class="skill-bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h3>PROATIVIDADE</h3>
+                                <h3>80%</h3>
+                            </div>
+                                <div class="skill-barra-container">
+                                    <div class="skill-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h3>ADAPTAÇÃO</h3>
+                                <h3>85%</h3>
+                            </div>
+                            <div class="skill-barra-container">
+                                <div class="skill-bar" style="width: 85%;"></div>
+                            </div>
+                            <div class="info">
+                                <h3>TRABALHO EM EQUIPE</h3>
+                                <h3>90%</h3>
+                            </div>
+                            <div class="skill-barra-container">
+                                <div class="skill-bar" style="width: 90%;"></div>
+                            </div>
+                            <div class="info">
+                                <h3>SOLUÇÕES DE PROBLEMAS</h3>
+                                <h3>80%</h3>
+                            </div>
+                            <div class="skill-barra-container">
+                                <div class="skill-bar" style="width: 80%;"></div>
+                            </div>
+                        </div>
                 </article> <!--Fim da area skills-->
-                <article id="formação"> 
+                <article id="formacao"> 
                     <h2> <i class="fa-solid fa-user-graduate"></i> Formação</h2>
+                    <div class="container-formacao"> 
+                        <div class="card-formacao">
+                            <h3>Analise e Desenvolvimento de Sistemas</h3>
+                            <p>Instituição: Estacio</p>
+                            <p>Período: 2024 - Atualmente</p>
+                    </div>
+                    </div>   
+                    <div class="container-formacao">
+                        <div class="card-formacao">
+                            <h3>Curso de HTML e CSS</h3>
+                            <p>Instituição: Curso em Video</p>
+                            <p>Período: 2025</p>
+                        </div>
+                    </div>
+                    <div class="container-formacao">
+                        <div class="card-formacao">
+                            <h3>Curso de JavaScript</h3>
+                            <p>Instituição: Curso em Video</p>
+                            <p>Período: 2025 - Atualmente</p>
+                        </div>
                 </article> <!--Fim da area formação-->
                 <article id="projetos"> 
                     <h2> <i class="fa-solid fa-trowel-bricks"></i> Projetos</h2>
+                    <div class="card-projetos">
+                        <h3>Projeto 1:</h3>
+                        <img src="imagens/SiteDoAndroid.png" alt="Site de android">
+                                <p>Tecnologias Utilizadas: HTML e CSS</p>
+                                <p>Descrição: Primeiro site que desenvolvi, assim que comecei a estudar HTML e CSS.
+                                    <details>
+                                        <summary>Mais informações</summary>
+                                        foi um site simples, com apenas 1 página, mas que me ajudou a entender a estrutura básica de um site e como utilizar o CSS para estilizar as páginas.
+                                        Não tinha muita responsividade, mas foi um ótimo começo, pois foi a partir dele que realmente dei o start no meu conhecimento de HTML e CSS.
+                                    </details>
+                                    <a href="https://matheuscordeiro52.github.io/PORTFOLIO/SiteDoAndroid/" target="_blank" class="acessar-projeto"><i class="fa-solid fa-globe"></i>Acessar Projeto</a>
+                                </p>
+                            </div>
+                            <div class="card-projetos">
+                                <h3>Projeto 2:</h3>
+                                <img src="imagens/CordelVirtual.png" alt="Site de Cordel Virtual">
+                                <p>Tecnologias Utilizadas: HTML, CSS</p>
+                                <p>Descrição: Site de Cordel Virtual, um projeto que desenvolvi para praticar minhas habilidades em HTML e CSS.
+                                    <details>
+                                        <summary>Mais informações</summary>
+                                        Um site simples, mas desenvolvi para aplicar meus estudos com backgrounds, fixos, gradientes, posicionamento das imagens dentro do background. Ou melhor dizendo, para aplicar meus conhecimentos com propriedades de background.
+                                    </details>
+                                    <a href="https://matheuscordeiro52.github.io/PORTFOLIO/CordelVirtual/" target="_blank" class="acessar-projeto"><i class="fa-solid fa-globe"></i>Acessar Projeto</a>
+                            </div>
+                            <div class="card-projetos">
+                                <h3>Projeto 3:</h3>
+                                <img src="imagens/RedesSociaisEmIphone.png" alt="Site de Redes Sociais em Iphone">
+                                <p>Tecnologias Utilizadas: HTML, CSS</p>
+                                <p>Descrição: Site de Redes Sociais em Iphone, um projeto que desenvolvi para praticar minhas habilidades em iframes.
+                                    <details>
+                                        <summary>Mais informações</summary>
+                                        Um site simples, mas desenvolvi para aplicar meus estudos com iframes, permitindo a incorporação de conteúdo de outras páginas de forma responsiva. Podendo selecionar qual tela você gostaria que aparecesse.
+                                    </details>
+                                    <a href="https://matheuscordeiro52.github.io/PORTFOLIO/IphoneRedesSociais/" target="_blank" class="acessar-projeto"><i class="fa-solid fa-globe"></i>Acessar Projeto</a>
+                            </div>
+                            <div class="card-projetos">
+                                <h3>Projeto 4:</h3>
+                                <img src="imagens/TelaLogin.png" alt="Tela de Login">
+                                <p>Tecnologias Utilizadas: HTML, CSS</p>
+                                <p>Descrição: Tela de Login, um projeto que desenvolvi para praticar minhas habilidades em mediaQueries.
+                                    <details>
+                                        <summary>Mais informações</summary>
+                                        Um site apenas com o front-end finalizado, para aplicar meus estudos com mediaQueries, form, inputs, botões e responsividade.
+                                    </details>
+                                <a href="https://matheuscordeiro52.github.io/PORTFOLIO/TelaLogin/" target="_blank" class="acessar-projeto"><i class="fa-solid fa-globe"></i>Acessar Projeto</a>
+                            </div>
                 </article> <!--Fim da area projetos-->
             </section>
     </main>
     <footer>
-
+        <p>desenvolvido por <a href="https://github.com/matheusCordeiro52" target="_blank">Matheus Cordeiro</a></p>
     </footer>
     <script src="scripts/script.js"></script>
 </body>
