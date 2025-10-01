@@ -1,0 +1,18 @@
+@media (min-width: 1200px) {
+    main{
+        grid-template-columns: auto 20vw 70vw auto;
+        padding-top: 10px;
+    }
+    section#ficha{
+        grid-column: 2;
+        height: fit-content;
+        margin-top: 50px;
+    }
+    section#ficha h1{
+        line-height: 1em;
+    }
+    section#detalhes{
+        grid-column: 3;
+        padding-top: 50px;
+    }
+}
