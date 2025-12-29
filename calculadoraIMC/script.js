@@ -1,8 +1,8 @@
 function imc(){
     // DECLARAÇÃO DE VARIAVEIS
     let nome = document.getElementById('nome').value;
-    let peso = parseFloat(document.getElementById('peso').value);
-    let altura = parseFloat(document.getElementById('altura').value);
+    let peso = parseInt(document.getElementById('peso').value);
+    let altura = parseInt(document.getElementById('altura').value);
     // CALCULO DAS VARIAVEIS
     let m = peso / (altura * altura);
     let resultado = "";
