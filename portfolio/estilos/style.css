@@ -209,7 +209,11 @@ footer a{
   font-weight: 600;
   text-decoration: none;
 }
-
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--destaque);
+}
                                           /* Tema escuro */
 body.escuro{
   background-color: var(--fundo-principal-escuro);
