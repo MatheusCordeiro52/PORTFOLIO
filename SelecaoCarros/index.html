@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO - programação orientada a objetos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+    <Section>
+    <h1>Adicione um novo carro</h1>
+    <input type="text" id="marca" placeholder="Digite a marca do carro">
+    <input type="text" id="nome" placeholder="Digite o nome do carro">
+    <input type="text" id="ano" placeholder="Digite o ano do carro">
+    <input type="text" id="potencia" placeholder="Digite a potência do carro">
+    <input type="text" id="imagem" placeholder="Digite o caminho da imagem do carro">
+    <button type="button" onclick="adicionarCarro()">
+    Adicionar
+    </button>
+
+    </Section>
+    <section>
+    <h2>Escolha um carro</h2>
+    <select id="escolhaCarro" onchange="apresentacaoCarro()">
+        <option value="">Selecione um carro</option>
+    </select>   
+    <div id="mostrarCarro"></div>
+
+    <div id="alertaObrigatorio" class="alerta">
+        Preencha os campos obrigatórios!
+        <div class="barra-tempo" id="minhaBarra"></div>
+    </div>
+
+    <div id="alerta" class="alerta">
+        Carro adicionado com sucesso!
+        <div class="barra-tempo" id="minhaBarra"></div>
+    </div>
+
+    </section>
+    </main>
+</body>
+</body>
+</html>
